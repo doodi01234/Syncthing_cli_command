@@ -10,3 +10,8 @@ The default path to the syncthing.exe is "C:\Program Files\SyncTrayzor\synchting
 Considering you find the synchting executable you have to run your cmd and cd to the directory Synctrazor.
 
 Finally the syntax of the basic command syncthing.exe -help (this command will show you the options and parameters of the command)
+
+By example if you want to add an antoher device to your syncthing server you can type "syncthing cli config devices add --device-id $DEVICE_ID_B"
+
+same way if you want to add a folder "syncthing cli config folders add --path <yourpath> --id $FOLDER_ID"
+to share it "syncthing cli config folders $FOLDER_ID devices add --device-id $DEVICE_ID_B"
